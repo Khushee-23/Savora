@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* all li and anchor will have this property so.. ( for consistent themeing ) */
+/* can go specific too with .nav-list li a*/
+
+body{
+    /* background-image: ;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgb(246, 234, 224);
+
+}
+header {
+    display: flex;
+    justify-content: space-between; /*justifies them.. with space.*/
+    align-items: center; /*height wise center*/
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    box-shadow: 1px 10px 20px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    z-index: 100; /*to ensure it stays at top of all the elements*/
+}
+
+/*sort of meaningless but let's see.*/
+/*If I add a button inside header then it's meaningless. as then once again it will be space-between*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /*always to the end */
+    /* flex-direction: row-end; */
+    width: 100%;
+    gap: 1.5rem;
+    max-width: 1600px;
+}
+
+.nav_list li, .nav_list a {
+    font-family: "Montez" , cursive;
+    font-size: 2rem;
+    text-decoration: none; /* removing underline */
+}
+
+.nav_list li{
+    display: inline-block;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.nav_list a{
+    transition: all 0.3 ease 0s;
+    color: #fe9e1a;
+}
+
+.nav_list a:hover{
+    color: #da281a;
+}
+
+
+.logo {
+    cursor: pointer;
+    height: 1.95rem;
+    margin: 0 1rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.primary_section{
+}
+
+.section_heading{
+    font-family: "Montez" , cursive;
+    font-size: 4rem;
+}
