@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        .front-page{
+            display:block;
+            width: 500px;
+            border-radius:85px;
+            
+        }
+        .heading{
+            display:inline-block;
+            font-size:40px;
+            font-weight:bold;
+            
+            
+            
+
+        }
+        .log-in{
+            background-color:orange;
+            font-size:26px;
+            color:white;
+            border:none;
+            border-radius:25px;
+            cursor:pointer;
+            height: 50px;
+            width: 150px;
+            transition:background color 1s color 1s;
+            padding:12px 36px;
+        }
+        .log-in:hover{
+            background-color:grey;
+            opacity:0.5s;
+
+        }
+        
+        .back-image{
+            background-image:url("image.png") ;
+            width:1500px;
+            height:600px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+            text-align:center;
+        }
+        .sign-in{
+            font-size:26px;
+            border:none;
+            border-radius: 25px;
+            color:rgb(rgb(20, 11, 11), green, blue);
+            background-color:rgb(rgb(174, 0, 255), green, blue);
+            
+            cursor:pointer;
+            height:50px;
+            width:150px;
+            transition:background-color 1s;
+
+
+        }
+        sign-in:hover{
+            opacity:0.1s;
+            background-color: white;
+        }
+    </style>
+    <title>Savora</title>
 </head>
 <body>
+    <div class="back-image">
+     <!-- <img class="front-page"  src="./image.png" alt="loading">  -->
+    </div>
+    <h1 class="heading">Welcome to savora !</h1>
+    <h2>Easily upload ,scan and save your favorite recipes.</h2>
+    <P>Easily upload ,scan and save your favourite receipes all in one place .wether it's a handwritten note ,receipe ,screenshot.cook your recipe with the help of savora 
+        
+    </P>
+    
+    <button class="log-in">
+        Log in
+    </button>
+    <button class="sign-in">
+        sign in
+    </button>
+    <button>
+        sign in as guest
+    </button>
     
 </body>
 </html>
