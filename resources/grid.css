@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.grid-container{
+    /*dvh = dynamic viewport height .. slightly different from vh*/
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    /* depends on height of the container*/
+    /* grid-template-rows: 1fr 1fr 1fr;  */
+    /*every new row will have element of 200px*/
+    grid-auto-rows: 200px;
+    /* by default the new elements are added to a new row.*/
+    /* but can be changed by the following*/
+    grid-auto-flow: column; /*as said default row*/
+    grid-auto-columns: 300px;
+    gap: 1em;
+}
+
+/*grid area is appliedto the child elements*/
+/* and template grid-area-template to the parent with display grid*/
+.items{
+    background-color: blue;
+    /*applies the alignment to the content inside , be it anything*/
+}

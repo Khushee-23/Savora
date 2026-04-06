@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 800px;
+    margin: 2px;
+    border: 5px solid black;
+    display: flex; /* has two axis main axis and cross axis */
+    /*default is main axis*/
+    /* both of the below has flex-end , flex-start , space-between , space-evenly , space-around  as possible values*/
+    justify-content: space-evenly; /*works on main-axis by default*/
+    align-items: center; /*works on cross axis by default --- thus works relative to height*/
+    /*changes the direction of main-axis , thus related properties changes*/
+    flex-direction: column; /*has values as row-reverse , column-reverse etc. row is default.*/
+    gap: 1em;
+    flex-wrap: wrap; /*wrap , nowrap or wrap-reverse*/
+
+    /*when there is wrapping then there becomes multiple main axis and cross axis*/
+    /*then we need align-content , justify-content*/
+
+    /*when there are multiple rows/columns gap can be split into column-gap and row-gap*/
+}
+
+#box-1{
+    /*isolating one element from the normal flow */
+    align-self: flex-end; /* as it's align it works on the cross axis*/
+    /* sadly main axis one doesn't work */
+    /* to achieve that we use the margin: auto; property*/
+}
+
+.items{
+    flex-grow: 1; /*enables growing when space available is more than specified size */
+    flex-shrink: 1; /* enables shrinking when size is less the specified size */
+    /*both can be combined with wrap as well -- if less space availabe than size then wrap it till the last element then shrink it.*/
+    background-color: blue;
+    width: 400px;
+    height: 200px;
+}

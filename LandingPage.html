@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="landing.css">
 </head>
 <body>
+
+    <div class="video-background">
+        <video autoplay muted loop id="backVideo">
+            <source src="Pulbic/Videos/Restaurant_Ad_Video (online-video-cutter.com).mp4">
+            <source src="Pulbic/Videos/fixed.mp4">
+        </video>
+    </div>
+
     <header>
         <img src="Pulbic/transparent-image-removebg-preview.png" alt="Logo" class="logo">
         <nav>
@@ -23,34 +31,33 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="left">
-            <section class="primary_section">
-                <h1 class="section_heading">Cook with what you have.</h1>
-                <p>Gourmet cuisine from your ingredients.</p>
-                <div>
-                    <input type="search" id="recipe-search" name="savora_search">
-                    <button class="search-button">Search</button>
-                </div>
-            </section>
-    
-            <section class="secondary_section">
-                <h2 class="section_heading">How Savora works.</h2>
-                <div>
-                    <ul>
-                        <li>1.List your ingredients</li>
-                        <li>2.Explore the kitchen.</li>
-                        <li>3.Save,Cook and Enjoy</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <div class="right-aside">
+    <main class="main-landing">
+        <section class="primary_section" style="grid-area: section-1;">
+            <h1 class="section_heading">Cook with what you have.</h1>
+            <p>Gourmet cuisine from your ingredients.</p>
+            <div>
+                <input type="search" id="recipe-search" placeholder="List your ingredients..." name="savora_search">
+                <button class="search-button">Search</button>
+            </div>
+        </section>
+
+        <aside class="right-aside" style="grid-area: aside-img;">
                 <img src="Pulbic/download.png" alt="Food">
-        </div>
+        </aside>
+
+        <section class="secondary_section" style="grid-area: section-2;">
+            <h1 class="section_heading">How Savora works.</h1>
+            <div class="info">
+                <!-- <ul class="info"> -->
+                    <li>1. List your ingredients</li>
+                    <li>2. Explore the kitchen.</li>
+                    <li>3. Save,Cook and Enjoy</li>
+                <!-- </ul> -->
+            </div>
+        </section>
     </main>
-    <footer>
-        <div>Made with love by Ayush and Khusee</div>
+    <footer class="landing-footer">
+        Made with love by Ayush and Khushee.
     </footer>
 </body>
 </html>
